@@ -1,12 +1,15 @@
-// Elabore umalgoritmo que preencha duas matrizes 10×10 comvaloresaleatórios 0 e 1 e emseguida, compare se as matrizes são iguais (possuemosmesmos valores emcada posição).
-// Detalhes:a) declarar uma CONSTANTE para o tamanho das matrizes 
-// (inicie comtamanho 2 e quando o algoritmo estiver pronto aumente para 10);b) imprima o resultado da comparação das duas matrizes 
-// (somente osnumeros que são diferentes, ou seja, 0 emuma matriz e 1 na outra etc);c) crie umlopping para repetir as montagens randômicas e os testes;d) 
+// Elabore umalgoritmo que preencha duas matrizes 10Ã—10 comvaloresaleatÃ³rios 0 e 1 e emseguida, compare se as matrizes sÃ£o iguais 
+// (possuem os mesmos valores em cada posiÃ§Ã£o).
+// Detalhes:
+// a) declarar uma CONSTANTE para o tamanho das matrizes 
+// (inicie comtamanho 2 e quando o algoritmo estiver pronto aumente para 10);
+// b) imprima o resultado da comparaÃ§Ã£o das duas matrizes 
+// (somente osnumeros que sÃ£o diferentes, ou seja, 0 emuma matriz e 1 na outra etc);
+// c) crie umlopping para repetir as montagens randÃ´micas e os testes;d) 
 // Declare uma constante de tempo... 
-// cada tela deve ficar exposta por 5segundos antes de trocar para a próxima iteração;
+// cada tela deve ficar exposta por 5 segundos antes de trocar para a prÃ³xima iteraÃ§Ã£o;
 
 #include <stdio.h>
-#include <time.h>
 #include <Windows.h>
 
 int main (void) {
@@ -15,7 +18,6 @@ int main (void) {
 	int i, j;
 	int matriz1[tamanho][tamanho];
 	int matriz2[tamanho][tamanho];
-	
 	
 	while(1) {
 		for(i=0;i<=tamanho;i++) {
@@ -30,7 +32,6 @@ int main (void) {
 			}
 		}
 
-	
 		for(i=0;i<=tamanho;i++) {
 			for(j=0;j<=tamanho;j++) {
 				if(matriz1[i][j] == matriz2[i][j]) {
@@ -46,6 +47,4 @@ int main (void) {
 		system("cls");
 	}
 	
-	
-
 }
